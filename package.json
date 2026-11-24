@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.22.3",
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.3.8",
+    "qr-image": "^3.2.0"
+  },
+  "name": "2.4-qr-code-project",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "cli": "node index.js"
+  },
+  "author": "Sadhana Singh",
+  "license": "ISC",
+  "description": ""
+}

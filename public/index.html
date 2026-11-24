@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>QR Code</h1>
+    <p class="intro">Add a URL and we'll create a QR code for you. People can scan the QR code to reach the URL.</p>
+
+    <form id="qr-form" novalidate>
+      <label for="url">URL</label>
+      <input id="url" name="url" type="text" inputmode="url" autocomplete="url"
+             placeholder="https://www.example.com" />
+      <p id="error" class="error" role="alert"></p>
+    </form>
+
+    <section id="result" class="result" hidden>
+      <h2>Preview</h2>
+      <div class="preview">
+        <img id="preview" alt="QR code preview" />
+      </div>
+      <div class="downloads">
+        <a id="download-png" class="btn btn-primary" download>Download PNG</a>
+        <a id="download-svg" class="btn btn-secondary" download>Download SVG</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
